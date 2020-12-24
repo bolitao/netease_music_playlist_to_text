@@ -1,242 +1,245 @@
 package netease_api_parse.pojo.songdetail;
 
-import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class PrivilegesItem{
+import java.util.List;
 
-	@JsonProperty("st")
-	private long st;
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class PrivilegesItem {
 
-	@JsonProperty("flag")
-	private long flag;
+    @JsonProperty("st")
+    private long st;
 
-	@JsonProperty("chargeInfoList")
-	private List<ChargeInfoListItem> chargeInfoList;
+    @JsonProperty("flag")
+    private long flag;
 
-	@JsonProperty("subp")
-	private long subp;
+    @JsonProperty("chargeInfoList")
+    private List<ChargeInfoListItem> chargeInfoList;
 
-	@JsonProperty("fl")
-	private long fl;
+    @JsonProperty("subp")
+    private long subp;
 
-	@JsonProperty("fee")
-	private long fee;
+    @JsonProperty("fl")
+    private long fl;
 
-	@JsonProperty("dl")
-	private long dl;
+    @JsonProperty("fee")
+    private long fee;
 
-	@JsonProperty("freeTrialPrivilege")
-	private FreeTrialPrivilege freeTrialPrivilege;
+    @JsonProperty("dl")
+    private long dl;
 
-	@JsonProperty("downloadMaxbr")
-	private long downloadMaxbr;
+    @JsonProperty("freeTrialPrivilege")
+    private FreeTrialPrivilege freeTrialPrivilege;
 
-	@JsonProperty("cp")
-	private long cp;
+    @JsonProperty("downloadMaxbr")
+    private long downloadMaxbr;
 
-	@JsonProperty("preSell")
-	private boolean preSell;
+    @JsonProperty("cp")
+    private long cp;
 
-	@JsonProperty("cs")
-	private boolean cs;
+    @JsonProperty("preSell")
+    private boolean preSell;
 
-	@JsonProperty("toast")
-	private boolean toast;
+    @JsonProperty("cs")
+    private boolean cs;
 
-	@JsonProperty("playMaxbr")
-	private long playMaxbr;
+    @JsonProperty("toast")
+    private boolean toast;
 
-	@JsonProperty("maxbr")
-	private long maxbr;
+    @JsonProperty("playMaxbr")
+    private long playMaxbr;
 
-	@JsonProperty("id")
-	private long id;
+    @JsonProperty("maxbr")
+    private long maxbr;
 
-	@JsonProperty("pl")
-	private long pl;
+    @JsonProperty("id")
+    private long id;
 
-	@JsonProperty("sp")
-	private long sp;
+    @JsonProperty("pl")
+    private long pl;
 
-	@JsonProperty("payed")
-	private long payed;
+    @JsonProperty("sp")
+    private long sp;
 
-	public void setSt(long st){
-		this.st = st;
-	}
+    @JsonProperty("payed")
+    private long payed;
 
-	public long getSt(){
-		return st;
-	}
+    public void setSt(long st) {
+        this.st = st;
+    }
 
-	public void setFlag(long flag){
-		this.flag = flag;
-	}
+    public long getSt() {
+        return st;
+    }
 
-	public long getFlag(){
-		return flag;
-	}
+    public void setFlag(long flag) {
+        this.flag = flag;
+    }
 
-	public void setChargeInfoList(List<ChargeInfoListItem> chargeInfoList){
-		this.chargeInfoList = chargeInfoList;
-	}
+    public long getFlag() {
+        return flag;
+    }
 
-	public List<ChargeInfoListItem> getChargeInfoList(){
-		return chargeInfoList;
-	}
+    public void setChargeInfoList(List<ChargeInfoListItem> chargeInfoList) {
+        this.chargeInfoList = chargeInfoList;
+    }
 
-	public void setSubp(long subp){
-		this.subp = subp;
-	}
+    public List<ChargeInfoListItem> getChargeInfoList() {
+        return chargeInfoList;
+    }
 
-	public long getSubp(){
-		return subp;
-	}
+    public void setSubp(long subp) {
+        this.subp = subp;
+    }
 
-	public void setFl(long fl){
-		this.fl = fl;
-	}
+    public long getSubp() {
+        return subp;
+    }
 
-	public long getFl(){
-		return fl;
-	}
+    public void setFl(long fl) {
+        this.fl = fl;
+    }
 
-	public void setFee(long fee){
-		this.fee = fee;
-	}
+    public long getFl() {
+        return fl;
+    }
 
-	public long getFee(){
-		return fee;
-	}
+    public void setFee(long fee) {
+        this.fee = fee;
+    }
 
-	public void setDl(long dl){
-		this.dl = dl;
-	}
+    public long getFee() {
+        return fee;
+    }
 
-	public long getDl(){
-		return dl;
-	}
+    public void setDl(long dl) {
+        this.dl = dl;
+    }
 
-	public void setFreeTrialPrivilege(FreeTrialPrivilege freeTrialPrivilege){
-		this.freeTrialPrivilege = freeTrialPrivilege;
-	}
+    public long getDl() {
+        return dl;
+    }
 
-	public FreeTrialPrivilege getFreeTrialPrivilege(){
-		return freeTrialPrivilege;
-	}
+    public void setFreeTrialPrivilege(FreeTrialPrivilege freeTrialPrivilege) {
+        this.freeTrialPrivilege = freeTrialPrivilege;
+    }
 
-	public void setDownloadMaxbr(long downloadMaxbr){
-		this.downloadMaxbr = downloadMaxbr;
-	}
+    public FreeTrialPrivilege getFreeTrialPrivilege() {
+        return freeTrialPrivilege;
+    }
 
-	public long getDownloadMaxbr(){
-		return downloadMaxbr;
-	}
+    public void setDownloadMaxbr(long downloadMaxbr) {
+        this.downloadMaxbr = downloadMaxbr;
+    }
 
-	public void setCp(long cp){
-		this.cp = cp;
-	}
+    public long getDownloadMaxbr() {
+        return downloadMaxbr;
+    }
 
-	public long getCp(){
-		return cp;
-	}
+    public void setCp(long cp) {
+        this.cp = cp;
+    }
 
-	public void setPreSell(boolean preSell){
-		this.preSell = preSell;
-	}
+    public long getCp() {
+        return cp;
+    }
 
-	public boolean isPreSell(){
-		return preSell;
-	}
+    public void setPreSell(boolean preSell) {
+        this.preSell = preSell;
+    }
 
-	public void setCs(boolean cs){
-		this.cs = cs;
-	}
+    public boolean isPreSell() {
+        return preSell;
+    }
 
-	public boolean isCs(){
-		return cs;
-	}
+    public void setCs(boolean cs) {
+        this.cs = cs;
+    }
 
-	public void setToast(boolean toast){
-		this.toast = toast;
-	}
+    public boolean isCs() {
+        return cs;
+    }
 
-	public boolean isToast(){
-		return toast;
-	}
+    public void setToast(boolean toast) {
+        this.toast = toast;
+    }
 
-	public void setPlayMaxbr(long playMaxbr){
-		this.playMaxbr = playMaxbr;
-	}
+    public boolean isToast() {
+        return toast;
+    }
 
-	public long getPlayMaxbr(){
-		return playMaxbr;
-	}
+    public void setPlayMaxbr(long playMaxbr) {
+        this.playMaxbr = playMaxbr;
+    }
 
-	public void setMaxbr(long maxbr){
-		this.maxbr = maxbr;
-	}
+    public long getPlayMaxbr() {
+        return playMaxbr;
+    }
 
-	public long getMaxbr(){
-		return maxbr;
-	}
+    public void setMaxbr(long maxbr) {
+        this.maxbr = maxbr;
+    }
 
-	public void setId(long id){
-		this.id = id;
-	}
+    public long getMaxbr() {
+        return maxbr;
+    }
 
-	public long getId(){
-		return id;
-	}
+    public void setId(long id) {
+        this.id = id;
+    }
 
-	public void setPl(long pl){
-		this.pl = pl;
-	}
+    public long getId() {
+        return id;
+    }
 
-	public long getPl(){
-		return pl;
-	}
+    public void setPl(long pl) {
+        this.pl = pl;
+    }
 
-	public void setSp(long sp){
-		this.sp = sp;
-	}
+    public long getPl() {
+        return pl;
+    }
 
-	public long getSp(){
-		return sp;
-	}
+    public void setSp(long sp) {
+        this.sp = sp;
+    }
 
-	public void setPayed(long payed){
-		this.payed = payed;
-	}
+    public long getSp() {
+        return sp;
+    }
 
-	public long getPayed(){
-		return payed;
-	}
+    public void setPayed(long payed) {
+        this.payed = payed;
+    }
 
-	@Override
- 	public String toString(){
-		return 
-			"PrivilegesItem{" + 
-			"st = '" + st + '\'' + 
-			",flag = '" + flag + '\'' + 
-			",chargeInfoList = '" + chargeInfoList + '\'' + 
-			",subp = '" + subp + '\'' + 
-			",fl = '" + fl + '\'' + 
-			",fee = '" + fee + '\'' + 
-			",dl = '" + dl + '\'' + 
-			",freeTrialPrivilege = '" + freeTrialPrivilege + '\'' + 
-			",downloadMaxbr = '" + downloadMaxbr + '\'' + 
-			",cp = '" + cp + '\'' + 
-			",preSell = '" + preSell + '\'' + 
-			",cs = '" + cs + '\'' + 
-			",toast = '" + toast + '\'' + 
-			",playMaxbr = '" + playMaxbr + '\'' + 
-			",maxbr = '" + maxbr + '\'' + 
-			",id = '" + id + '\'' + 
-			",pl = '" + pl + '\'' + 
-			",sp = '" + sp + '\'' + 
-			",payed = '" + payed + '\'' + 
-			"}";
-		}
+    public long getPayed() {
+        return payed;
+    }
+
+    @Override
+    public String toString() {
+        return
+                "PrivilegesItem{" +
+                        "st = '" + st + '\'' +
+                        ",flag = '" + flag + '\'' +
+                        ",chargeInfoList = '" + chargeInfoList + '\'' +
+                        ",subp = '" + subp + '\'' +
+                        ",fl = '" + fl + '\'' +
+                        ",fee = '" + fee + '\'' +
+                        ",dl = '" + dl + '\'' +
+                        ",freeTrialPrivilege = '" + freeTrialPrivilege + '\'' +
+                        ",downloadMaxbr = '" + downloadMaxbr + '\'' +
+                        ",cp = '" + cp + '\'' +
+                        ",preSell = '" + preSell + '\'' +
+                        ",cs = '" + cs + '\'' +
+                        ",toast = '" + toast + '\'' +
+                        ",playMaxbr = '" + playMaxbr + '\'' +
+                        ",maxbr = '" + maxbr + '\'' +
+                        ",id = '" + id + '\'' +
+                        ",pl = '" + pl + '\'' +
+                        ",sp = '" + sp + '\'' +
+                        ",payed = '" + payed + '\'' +
+                        "}";
+    }
 }

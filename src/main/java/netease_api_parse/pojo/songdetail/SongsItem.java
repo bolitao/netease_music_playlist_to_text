@@ -1,470 +1,473 @@
 package netease_api_parse.pojo.songdetail;
 
-import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class SongsItem{
+import java.util.List;
 
-	@JsonProperty("no")
-	private long no;
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class SongsItem {
 
-	@JsonProperty("rt")
-	private String rt;
+    @JsonProperty("no")
+    private long no;
 
-	@JsonProperty("copyright")
-	private long copyright;
+    @JsonProperty("rt")
+    private String rt;
 
-	@JsonProperty("fee")
-	private long fee;
+    @JsonProperty("copyright")
+    private long copyright;
 
-	@JsonProperty("rurl")
-	private Object rurl;
+    @JsonProperty("fee")
+    private long fee;
 
-	@JsonProperty("mst")
-	private long mst;
+    @JsonProperty("rurl")
+    private Object rurl;
 
-	@JsonProperty("pst")
-	private long pst;
+    @JsonProperty("mst")
+    private long mst;
 
-	@JsonProperty("pop")
-	private long pop;
+    @JsonProperty("pst")
+    private long pst;
 
-	@JsonProperty("dt")
-	private long dt;
+    @JsonProperty("pop")
+    private long pop;
 
-	@JsonProperty("rtype")
-	private long rtype;
+    @JsonProperty("dt")
+    private long dt;
 
-	@JsonProperty("s_id")
-	private long sId;
+    @JsonProperty("rtype")
+    private long rtype;
 
-	@JsonProperty("rtUrls")
-	private List<Object> rtUrls;
+    @JsonProperty("s_id")
+    private long sId;
 
-	@JsonProperty("id")
-	private long id;
+    @JsonProperty("rtUrls")
+    private List<Object> rtUrls;
 
-	@JsonProperty("st")
-	private long st;
+    @JsonProperty("id")
+    private long id;
 
-	@JsonProperty("a")
-	private Object A;
+    @JsonProperty("st")
+    private long st;
 
-	@JsonProperty("cd")
-	private String cd;
+    @JsonProperty("a")
+    private Object A;
 
-	@JsonProperty("publishTime")
-	private long publishTime;
+    @JsonProperty("cd")
+    private String cd;
 
-	@JsonProperty("cf")
-	private String cf;
+    @JsonProperty("publishTime")
+    private long publishTime;
 
-	@JsonProperty("originCoverType")
-	private long originCoverType;
+    @JsonProperty("cf")
+    private String cf;
 
-	@JsonProperty("h")
-	private H H;
+    @JsonProperty("originCoverType")
+    private long originCoverType;
 
-	@JsonProperty("mv")
-	private long mv;
+    @JsonProperty("h")
+    private H H;
 
-	@JsonProperty("al")
-	private Al al;
+    @JsonProperty("mv")
+    private long mv;
 
-	@JsonProperty("originSongSimpleData")
-	private Object originSongSimpleData;
+    @JsonProperty("al")
+    private Al al;
 
-	@JsonProperty("l")
-	private L L;
+    @JsonProperty("originSongSimpleData")
+    private Object originSongSimpleData;
 
-	@JsonProperty("m")
-	private M M;
+    @JsonProperty("l")
+    private L L;
 
-	@JsonProperty("cp")
-	private long cp;
+    @JsonProperty("m")
+    private M M;
 
-	@JsonProperty("alia")
-	private List<Object> alia;
+    @JsonProperty("cp")
+    private long cp;
 
-	@JsonProperty("djId")
-	private long djId;
+    @JsonProperty("alia")
+    private List<Object> alia;
 
-	@JsonProperty("noCopyrightRcmd")
-	private Object noCopyrightRcmd;
+    @JsonProperty("djId")
+    private long djId;
 
-	@JsonProperty("crbt")
-	private Object crbt;
+    @JsonProperty("noCopyrightRcmd")
+    private Object noCopyrightRcmd;
 
-	@JsonProperty("single")
-	private long single;
+    @JsonProperty("crbt")
+    private Object crbt;
 
-	@JsonProperty("ar")
-	private List<ArItem> ar;
+    @JsonProperty("single")
+    private long single;
 
-	@JsonProperty("rtUrl")
-	private Object rtUrl;
+    @JsonProperty("ar")
+    private List<ArItem> ar;
 
-	@JsonProperty("ftype")
-	private long ftype;
+    @JsonProperty("rtUrl")
+    private Object rtUrl;
 
-	@JsonProperty("t")
-	private long T;
+    @JsonProperty("ftype")
+    private long ftype;
 
-	@JsonProperty("v")
-	private long V;
+    @JsonProperty("t")
+    private long T;
 
-	@JsonProperty("name")
-	private String name;
+    @JsonProperty("v")
+    private long V;
 
-	@JsonProperty("mark")
-	private long mark;
+    @JsonProperty("name")
+    private String name;
 
-	public void setNo(long no){
-		this.no = no;
-	}
+    @JsonProperty("mark")
+    private long mark;
 
-	public long getNo(){
-		return no;
-	}
+    public void setNo(long no) {
+        this.no = no;
+    }
 
-	public void setRt(String rt){
-		this.rt = rt;
-	}
+    public long getNo() {
+        return no;
+    }
 
-	public String getRt(){
-		return rt;
-	}
+    public void setRt(String rt) {
+        this.rt = rt;
+    }
 
-	public void setCopyright(long copyright){
-		this.copyright = copyright;
-	}
+    public String getRt() {
+        return rt;
+    }
 
-	public long getCopyright(){
-		return copyright;
-	}
+    public void setCopyright(long copyright) {
+        this.copyright = copyright;
+    }
 
-	public void setFee(long fee){
-		this.fee = fee;
-	}
+    public long getCopyright() {
+        return copyright;
+    }
 
-	public long getFee(){
-		return fee;
-	}
+    public void setFee(long fee) {
+        this.fee = fee;
+    }
 
-	public void setRurl(Object rurl){
-		this.rurl = rurl;
-	}
+    public long getFee() {
+        return fee;
+    }
 
-	public Object getRurl(){
-		return rurl;
-	}
+    public void setRurl(Object rurl) {
+        this.rurl = rurl;
+    }
 
-	public void setMst(long mst){
-		this.mst = mst;
-	}
+    public Object getRurl() {
+        return rurl;
+    }
 
-	public long getMst(){
-		return mst;
-	}
+    public void setMst(long mst) {
+        this.mst = mst;
+    }
 
-	public void setPst(long pst){
-		this.pst = pst;
-	}
+    public long getMst() {
+        return mst;
+    }
 
-	public long getPst(){
-		return pst;
-	}
+    public void setPst(long pst) {
+        this.pst = pst;
+    }
 
-	public void setPop(long pop){
-		this.pop = pop;
-	}
+    public long getPst() {
+        return pst;
+    }
 
-	public long getPop(){
-		return pop;
-	}
+    public void setPop(long pop) {
+        this.pop = pop;
+    }
 
-	public void setDt(long dt){
-		this.dt = dt;
-	}
+    public long getPop() {
+        return pop;
+    }
 
-	public long getDt(){
-		return dt;
-	}
+    public void setDt(long dt) {
+        this.dt = dt;
+    }
 
-	public void setRtype(long rtype){
-		this.rtype = rtype;
-	}
+    public long getDt() {
+        return dt;
+    }
 
-	public long getRtype(){
-		return rtype;
-	}
+    public void setRtype(long rtype) {
+        this.rtype = rtype;
+    }
 
-	public void setSId(long sId){
-		this.sId = sId;
-	}
+    public long getRtype() {
+        return rtype;
+    }
 
-	public long getSId(){
-		return sId;
-	}
+    public void setSId(long sId) {
+        this.sId = sId;
+    }
 
-	public void setRtUrls(List<Object> rtUrls){
-		this.rtUrls = rtUrls;
-	}
+    public long getSId() {
+        return sId;
+    }
 
-	public List<Object> getRtUrls(){
-		return rtUrls;
-	}
+    public void setRtUrls(List<Object> rtUrls) {
+        this.rtUrls = rtUrls;
+    }
 
-	public void setId(long id){
-		this.id = id;
-	}
+    public List<Object> getRtUrls() {
+        return rtUrls;
+    }
 
-	public long getId(){
-		return id;
-	}
+    public void setId(long id) {
+        this.id = id;
+    }
 
-	public void setSt(long st){
-		this.st = st;
-	}
+    public long getId() {
+        return id;
+    }
 
-	public long getSt(){
-		return st;
-	}
+    public void setSt(long st) {
+        this.st = st;
+    }
 
-	public void setA(Object A){
-		this.A = A;
-	}
+    public long getSt() {
+        return st;
+    }
 
-	public Object getA(){
-		return A;
-	}
+    public void setA(Object A) {
+        this.A = A;
+    }
 
-	public void setCd(String cd){
-		this.cd = cd;
-	}
+    public Object getA() {
+        return A;
+    }
 
-	public String getCd(){
-		return cd;
-	}
+    public void setCd(String cd) {
+        this.cd = cd;
+    }
 
-	public void setPublishTime(long publishTime){
-		this.publishTime = publishTime;
-	}
+    public String getCd() {
+        return cd;
+    }
 
-	public long getPublishTime(){
-		return publishTime;
-	}
+    public void setPublishTime(long publishTime) {
+        this.publishTime = publishTime;
+    }
 
-	public void setCf(String cf){
-		this.cf = cf;
-	}
+    public long getPublishTime() {
+        return publishTime;
+    }
 
-	public String getCf(){
-		return cf;
-	}
+    public void setCf(String cf) {
+        this.cf = cf;
+    }
 
-	public void setOriginCoverType(long originCoverType){
-		this.originCoverType = originCoverType;
-	}
+    public String getCf() {
+        return cf;
+    }
 
-	public long getOriginCoverType(){
-		return originCoverType;
-	}
+    public void setOriginCoverType(long originCoverType) {
+        this.originCoverType = originCoverType;
+    }
 
-	public void setH(H H){
-		this.H = H;
-	}
+    public long getOriginCoverType() {
+        return originCoverType;
+    }
 
-	public H getH(){
-		return H;
-	}
+    public void setH(H H) {
+        this.H = H;
+    }
 
-	public void setMv(long mv){
-		this.mv = mv;
-	}
+    public H getH() {
+        return H;
+    }
 
-	public long getMv(){
-		return mv;
-	}
+    public void setMv(long mv) {
+        this.mv = mv;
+    }
 
-	public void setAl(Al al){
-		this.al = al;
-	}
+    public long getMv() {
+        return mv;
+    }
 
-	public Al getAl(){
-		return al;
-	}
+    public void setAl(Al al) {
+        this.al = al;
+    }
 
-	public void setOriginSongSimpleData(Object originSongSimpleData){
-		this.originSongSimpleData = originSongSimpleData;
-	}
+    public Al getAl() {
+        return al;
+    }
 
-	public Object getOriginSongSimpleData(){
-		return originSongSimpleData;
-	}
+    public void setOriginSongSimpleData(Object originSongSimpleData) {
+        this.originSongSimpleData = originSongSimpleData;
+    }
 
-	public void setL(L L){
-		this.L = L;
-	}
+    public Object getOriginSongSimpleData() {
+        return originSongSimpleData;
+    }
 
-	public L getL(){
-		return L;
-	}
+    public void setL(L L) {
+        this.L = L;
+    }
 
-	public void setM(M M){
-		this.M = M;
-	}
+    public L getL() {
+        return L;
+    }
 
-	public M getM(){
-		return M;
-	}
+    public void setM(M M) {
+        this.M = M;
+    }
 
-	public void setCp(long cp){
-		this.cp = cp;
-	}
+    public M getM() {
+        return M;
+    }
 
-	public long getCp(){
-		return cp;
-	}
+    public void setCp(long cp) {
+        this.cp = cp;
+    }
 
-	public void setAlia(List<Object> alia){
-		this.alia = alia;
-	}
+    public long getCp() {
+        return cp;
+    }
 
-	public List<Object> getAlia(){
-		return alia;
-	}
-
-	public void setDjId(long djId){
-		this.djId = djId;
-	}
-
-	public long getDjId(){
-		return djId;
-	}
-
-	public void setNoCopyrightRcmd(Object noCopyrightRcmd){
-		this.noCopyrightRcmd = noCopyrightRcmd;
-	}
-
-	public Object getNoCopyrightRcmd(){
-		return noCopyrightRcmd;
-	}
-
-	public void setCrbt(Object crbt){
-		this.crbt = crbt;
-	}
-
-	public Object getCrbt(){
-		return crbt;
-	}
-
-	public void setSingle(long single){
-		this.single = single;
-	}
-
-	public long getSingle(){
-		return single;
-	}
-
-	public void setAr(List<ArItem> ar){
-		this.ar = ar;
-	}
-
-	public List<ArItem> getAr(){
-		return ar;
-	}
-
-	public void setRtUrl(Object rtUrl){
-		this.rtUrl = rtUrl;
-	}
-
-	public Object getRtUrl(){
-		return rtUrl;
-	}
-
-	public void setFtype(long ftype){
-		this.ftype = ftype;
-	}
-
-	public long getFtype(){
-		return ftype;
-	}
-
-	public void setT(long T){
-		this.T = T;
-	}
-
-	public long getT(){
-		return T;
-	}
-
-	public void setV(long V){
-		this.V = V;
-	}
-
-	public long getV(){
-		return V;
-	}
-
-	public void setName(String name){
-		this.name = name;
-	}
-
-	public String getName(){
-		return name;
-	}
-
-	public void setMark(long mark){
-		this.mark = mark;
-	}
-
-	public long getMark(){
-		return mark;
-	}
-
-	@Override
- 	public String toString(){
-		return 
-			"SongsItem{" + 
-			"no = '" + no + '\'' + 
-			",rt = '" + rt + '\'' + 
-			",copyright = '" + copyright + '\'' + 
-			",fee = '" + fee + '\'' + 
-			",rurl = '" + rurl + '\'' + 
-			",mst = '" + mst + '\'' + 
-			",pst = '" + pst + '\'' + 
-			",pop = '" + pop + '\'' + 
-			",dt = '" + dt + '\'' + 
-			",rtype = '" + rtype + '\'' + 
-			",s_id = '" + sId + '\'' + 
-			",rtUrls = '" + rtUrls + '\'' + 
-			",id = '" + id + '\'' + 
-			",st = '" + st + '\'' + 
-			",a = '" + A + '\'' + 
-			",cd = '" + cd + '\'' + 
-			",publishTime = '" + publishTime + '\'' + 
-			",cf = '" + cf + '\'' + 
-			",originCoverType = '" + originCoverType + '\'' + 
-			",h = '" + H + '\'' + 
-			",mv = '" + mv + '\'' + 
-			",al = '" + al + '\'' + 
-			",originSongSimpleData = '" + originSongSimpleData + '\'' + 
-			",l = '" + L + '\'' + 
-			",m = '" + M + '\'' + 
-			",cp = '" + cp + '\'' + 
-			",alia = '" + alia + '\'' + 
-			",djId = '" + djId + '\'' + 
-			",noCopyrightRcmd = '" + noCopyrightRcmd + '\'' + 
-			",crbt = '" + crbt + '\'' + 
-			",single = '" + single + '\'' + 
-			",ar = '" + ar + '\'' + 
-			",rtUrl = '" + rtUrl + '\'' + 
-			",ftype = '" + ftype + '\'' + 
-			",t = '" + T + '\'' + 
-			",v = '" + V + '\'' + 
-			",name = '" + name + '\'' + 
-			",mark = '" + mark + '\'' + 
-			"}";
-		}
+    public void setAlia(List<Object> alia) {
+        this.alia = alia;
+    }
+
+    public List<Object> getAlia() {
+        return alia;
+    }
+
+    public void setDjId(long djId) {
+        this.djId = djId;
+    }
+
+    public long getDjId() {
+        return djId;
+    }
+
+    public void setNoCopyrightRcmd(Object noCopyrightRcmd) {
+        this.noCopyrightRcmd = noCopyrightRcmd;
+    }
+
+    public Object getNoCopyrightRcmd() {
+        return noCopyrightRcmd;
+    }
+
+    public void setCrbt(Object crbt) {
+        this.crbt = crbt;
+    }
+
+    public Object getCrbt() {
+        return crbt;
+    }
+
+    public void setSingle(long single) {
+        this.single = single;
+    }
+
+    public long getSingle() {
+        return single;
+    }
+
+    public void setAr(List<ArItem> ar) {
+        this.ar = ar;
+    }
+
+    public List<ArItem> getAr() {
+        return ar;
+    }
+
+    public void setRtUrl(Object rtUrl) {
+        this.rtUrl = rtUrl;
+    }
+
+    public Object getRtUrl() {
+        return rtUrl;
+    }
+
+    public void setFtype(long ftype) {
+        this.ftype = ftype;
+    }
+
+    public long getFtype() {
+        return ftype;
+    }
+
+    public void setT(long T) {
+        this.T = T;
+    }
+
+    public long getT() {
+        return T;
+    }
+
+    public void setV(long V) {
+        this.V = V;
+    }
+
+    public long getV() {
+        return V;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setMark(long mark) {
+        this.mark = mark;
+    }
+
+    public long getMark() {
+        return mark;
+    }
+
+    @Override
+    public String toString() {
+        return
+                "SongsItem{" +
+                        "no = '" + no + '\'' +
+                        ",rt = '" + rt + '\'' +
+                        ",copyright = '" + copyright + '\'' +
+                        ",fee = '" + fee + '\'' +
+                        ",rurl = '" + rurl + '\'' +
+                        ",mst = '" + mst + '\'' +
+                        ",pst = '" + pst + '\'' +
+                        ",pop = '" + pop + '\'' +
+                        ",dt = '" + dt + '\'' +
+                        ",rtype = '" + rtype + '\'' +
+                        ",s_id = '" + sId + '\'' +
+                        ",rtUrls = '" + rtUrls + '\'' +
+                        ",id = '" + id + '\'' +
+                        ",st = '" + st + '\'' +
+                        ",a = '" + A + '\'' +
+                        ",cd = '" + cd + '\'' +
+                        ",publishTime = '" + publishTime + '\'' +
+                        ",cf = '" + cf + '\'' +
+                        ",originCoverType = '" + originCoverType + '\'' +
+                        ",h = '" + H + '\'' +
+                        ",mv = '" + mv + '\'' +
+                        ",al = '" + al + '\'' +
+                        ",originSongSimpleData = '" + originSongSimpleData + '\'' +
+                        ",l = '" + L + '\'' +
+                        ",m = '" + M + '\'' +
+                        ",cp = '" + cp + '\'' +
+                        ",alia = '" + alia + '\'' +
+                        ",djId = '" + djId + '\'' +
+                        ",noCopyrightRcmd = '" + noCopyrightRcmd + '\'' +
+                        ",crbt = '" + crbt + '\'' +
+                        ",single = '" + single + '\'' +
+                        ",ar = '" + ar + '\'' +
+                        ",rtUrl = '" + rtUrl + '\'' +
+                        ",ftype = '" + ftype + '\'' +
+                        ",t = '" + T + '\'' +
+                        ",v = '" + V + '\'' +
+                        ",name = '" + name + '\'' +
+                        ",mark = '" + mark + '\'' +
+                        "}";
+    }
 }

@@ -1,50 +1,53 @@
 package netease_api_parse.pojo.songdetail;
 
-import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class SongDetail{
+import java.util.List;
 
-	@JsonProperty("privileges")
-	private List<PrivilegesItem> privileges;
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class SongDetail {
 
-	@JsonProperty("code")
-	private long code;
+    @JsonProperty("privileges")
+    private List<PrivilegesItem> privileges;
 
-	@JsonProperty("songs")
-	private List<SongsItem> songs;
+    @JsonProperty("code")
+    private long code;
 
-	public void setPrivileges(List<PrivilegesItem> privileges){
-		this.privileges = privileges;
-	}
+    @JsonProperty("songs")
+    private List<SongsItem> songs;
 
-	public List<PrivilegesItem> getPrivileges(){
-		return privileges;
-	}
+    public void setPrivileges(List<PrivilegesItem> privileges) {
+        this.privileges = privileges;
+    }
 
-	public void setCode(long code){
-		this.code = code;
-	}
+    public List<PrivilegesItem> getPrivileges() {
+        return privileges;
+    }
 
-	public long getCode(){
-		return code;
-	}
+    public void setCode(long code) {
+        this.code = code;
+    }
 
-	public void setSongs(List<SongsItem> songs){
-		this.songs = songs;
-	}
+    public long getCode() {
+        return code;
+    }
 
-	public List<SongsItem> getSongs(){
-		return songs;
-	}
+    public void setSongs(List<SongsItem> songs) {
+        this.songs = songs;
+    }
 
-	@Override
- 	public String toString(){
-		return 
-			"SongDetail{" + 
-			"privileges = '" + privileges + '\'' + 
-			",code = '" + code + '\'' + 
-			",songs = '" + songs + '\'' + 
-			"}";
-		}
+    public List<SongsItem> getSongs() {
+        return songs;
+    }
+
+    @Override
+    public String toString() {
+        return
+                "SongDetail{" +
+                        "privileges = '" + privileges + '\'' +
+                        ",code = '" + code + '\'' +
+                        ",songs = '" + songs + '\'' +
+                        "}";
+    }
 }
