@@ -46,7 +46,7 @@ public class NeteaseApiParseApplication {
     public static void main(String[] args) throws Exception {
         String apiPath = "http://localhost:3000";
         String playlistId = getInput("歌单 ID: ");
-        String fileName = getInput("输出文件名: ");
+        String fileName = getInput("输出文件名: ") + ".txt";
         String apiUrl = apiPath + "/playlist/detail?id=" + playlistId;
         String songDetailUrlPrefix = apiPath + "/song/detail?ids=";
 
@@ -76,7 +76,7 @@ public class NeteaseApiParseApplication {
                 songDetailUrl.append(ids.get(i)).append(",");
             }
             songDetailUrl.deleteCharAt(songDetailUrl.length() - 1);
-            Thread.sleep(5000);
+            Thread.sleep(500);
             songDetailHandle(songDetailUrl.toString(), simpNetHandler, fileName);
         }
     }
