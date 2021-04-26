@@ -2,7 +2,7 @@
 
 ## 使用
 
-注：需在本地启动 **[网易云音乐 NodeJS 版 API](https://neteasecloudmusicapi.vercel.app)**。
+注：需在本地启动 **[网易云音乐 NodeJS 版 API](https://github.com/Binaryify/NeteaseCloudMusicApi)**。
 
 - 使用以下命令运行：
 
@@ -18,6 +18,6 @@
 
 ## 相关链接
 
-- [网易云音乐 NodeJS 版 API](https://neteasecloudmusicapi.vercel.app)
+- [网易云音乐 NodeJS 版 API](https://github.com/Binaryify/NeteaseCloudMusicApi)
 
 - [在不同的音乐服务平台之间传送播放列表 | Tune My Music](https://www.tunemymusic.com/zh-cn/)
